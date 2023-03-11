@@ -33,6 +33,7 @@ import { RecipientRequestDetails } from "./components/recipient/RecipientRequest
 // import { RecipientLoginForm } from "./components/recipient/RecipientLoginForm";
 
 import { MainHome } from "./components/MainHome";
+import { MainHomeTestColor } from "./components/MainHomeTestColor";
 import { UserLoginForm } from "./components/UserLoginForm";
 
 
@@ -42,6 +43,7 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<MainHome></MainHome>}></Route>
+            <Route path="/test" element={<MainHomeTestColor></MainHomeTestColor>}></Route>
             <Route path="/login" element={<UserLoginForm></UserLoginForm>}></Route>
             {/* donor paths below */}
             <Route path='/donorRegistrationForm' element={<DonorRegistrationForm></DonorRegistrationForm>}></Route>

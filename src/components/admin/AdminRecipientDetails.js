@@ -67,11 +67,11 @@ export function AdminRecipientDetails(){
                                     <td>{`${rd.kycverified}`}</td>
                                     <td>||</td>
                                     <td>{rd.rawFoodQuantityRequired}</td>
-                                    <td>{rd.rawFoodQuantityRequired}</td>
                                     <td>{rd.clothesQuantityRequired}</td>
+                                    <td>{rd.stationaryQuantityRequired}</td>
                                     <td>||</td>
+                                    <td>{rd.rawFoodQuantityReceived}</td>
                                     <td>{rd.clothesQuantityReceived}</td>
-                                    <td>{rd.stationaryQuantityReceived}</td>
                                     <td>{rd.stationaryQuantityReceived}</td>
                                 </tr>
                                 );

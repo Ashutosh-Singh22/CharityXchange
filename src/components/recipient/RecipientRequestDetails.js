@@ -54,12 +54,12 @@ export function RecipientRequestDetails(){
                         <tbody>
                             <tr style={{ textAlign: "center" }}>
                                 <td>{recipientDetails.rawFoodQuantityRequired}</td>
-                                <td>{recipientDetails.rawFoodQuantityRequired}</td>
+                                <td>{recipientDetails.stationaryQuantityRequired}</td>
                                 <td>{recipientDetails.clothesQuantityRequired}</td>
                                 <td>||</td>
+                                <td>{recipientDetails.rawFoodQuantityReceived}</td>
+                                <td>{recipientDetails.stationaryQuantityReceived}</td>
                                 <td>{recipientDetails.clothesQuantityReceived}</td>
-                                <td>{recipientDetails.stationaryQuantityReceived}</td>
-                                <td>{recipientDetails.stationaryQuantityReceived}</td>
                             </tr>
                         </tbody>
                     </Table>

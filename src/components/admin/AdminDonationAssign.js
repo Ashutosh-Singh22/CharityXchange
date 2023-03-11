@@ -137,12 +137,14 @@ export function AdminDonationAssign(){
                                         <td>{dd.clothesQuantity}</td>
                                         <td>{dd.stationaryQuantity}</td>
                                         <td> <select name="volunteer"
-                                            
                                             onChange={ (e) => {handleChangeForVolunteer(e, dd)} }
                                             required>
                                                 <option value={null}>Select</option>
                                                 {
-                                                    volunteerDetails.map( (volun) => {
+
+                                                    volunteerDetails.sort( function(a,b){
+                                                       return Math.abs(a.volunteerZipCode - dd.donor.donorZipCode) - Math.abs(b.volunteerZipCode - dd.donor.donorZipCode)
+                                                    }).map( (volun) => {
                                                         return (
                                                             <option value = {volun.volunteerId}>{volun.volunteerName}</option>
                                                         )
